@@ -2,7 +2,15 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta http-equiv="refresh" content="0;url=steam://run/2168680" />
+  <script>
+    // Step 1: Launch Rust
+    window.location.href = "steam://run/252490"; // 252490 = Rust
+
+    // Step 2: After 30 seconds, join server
+    setTimeout(function () {
+      window.location.href = "steam://connect/195.18.27.120:28015";
+    }, 30000); // 30000 ms = 30 seconds
+  </script>
 </head>
 <body>
 </body>
